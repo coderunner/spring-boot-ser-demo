@@ -1,0 +1,7 @@
+- Introduire le code - Controller et Model
+- Notez les annotations pour le controller et le type de média
+- Démarrer le serveur - ./mvnw clean spring-boot:run
+- Expliquer l'outil Postman
+- Utiliser Postman pour la démo
+  - GET et POST
+  - XML et JSON
