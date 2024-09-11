@@ -1,0 +1,5 @@
+Exécuter
+
+```
+./gradlew bootRun
+```
