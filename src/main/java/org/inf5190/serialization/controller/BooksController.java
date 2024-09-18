@@ -20,11 +20,11 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 @RestController
 public class BooksController {
-    static public final List<Book> BOOKS = new ArrayList<>(Arrays.asList(
-            new Book("Le Hobbit", "J.R.R. Tolkien", 1937),
-            new Book("La communauté de l'anneau", "J.R.R. Tolkien", 1954),
-            new Book("Les deux tours", "J.R.R. Tolkien", 1954),
-            new Book("Le retour du roi", "J.R.R. Tolkien", 1955)));
+    static public final List<Book> BOOKS =
+            new ArrayList<>(Arrays.asList(new Book("Le Hobbit", "J.R.R. Tolkien", 1937),
+                    new Book("La communauté de l'anneau", "J.R.R. Tolkien", 1954),
+                    new Book("Les deux tours", "J.R.R. Tolkien", 1954),
+                    new Book("Le retour du roi", "J.R.R. Tolkien", 1955)));
 
     @GetMapping(value = "/books", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> getBooksJson() {
